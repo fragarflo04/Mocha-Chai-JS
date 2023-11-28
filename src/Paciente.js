@@ -54,8 +54,8 @@ class Paciente {
         }
         return age;
 
-        
-        
+
+
     }
 
 
@@ -72,7 +72,14 @@ class Paciente {
 
 
     calcularIMC() {
-        return this.registroBascula.calcularIMC();
+        if (this.registroBascula) 
+        {
+            return this.registroBascula.calcularIMC();
+        } else 
+        {
+            return -1; // O algún otro valor que indique que no se puede calcular el IMC
+        }
+
     }
 
 }

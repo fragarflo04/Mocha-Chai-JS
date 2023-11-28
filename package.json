@@ -4,7 +4,7 @@
   "description": "App Salud",
   "main": "index.js",
   "scripts": {
-    "test": "mocha  --experimental-modules unitarias && mocha --experimental-modules integracion",
+    "test": "mocha  --experimental-modules unitarias --reporter mochawesome && mocha --experimental-modules integracion --reporter mochawesome",
     "bascula": "mocha --experimental-modules unitarias/bascula.spec.js",
     "paciente": "mocha --experimental-modules unitarias/paciente.spec.js"
   },
@@ -20,6 +20,7 @@
   "homepage": "https://github.com/fragarflo04/Mocha-Chai-JS#readme",
   "devDependencies": {
     "chai": "^4.3.10",
-    "mocha": "^10.2.0"
+    "mocha": "^10.2.0",
+    "mochawesome": "^7.1.3"
   }
 }
