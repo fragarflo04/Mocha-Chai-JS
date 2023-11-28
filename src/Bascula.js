@@ -1,10 +1,4 @@
 class Bascula {
-    pesos = [];
-    alturas = [];
-    fechas = [];
-    anotaciones = 0;
-
-
 
     constructor() {
 
@@ -48,7 +42,7 @@ class Bascula {
         const ult_peso = this.pesos[this.pesos.length - 1];
         const ult_altura = this.alturas[this.alturas.length - 1];
         const imc = ult_peso / Math.pow(ult_altura, 2);
-        return parseFloat(imc.toFixed(1)); 
+        return imc.toFixed(2); 
     }
 
     obtenerPesoMedio() 
@@ -57,7 +51,7 @@ class Bascula {
             return 0;
         } else {
             const sumaPesos = this.pesos.reduce((acumulado, peso) => acumulado + peso, 0);
-            return sumaPesos / this.pesos.length;
+            return (sumaPesos / this.pesos.length).toFixed(1);
         }
     }
 

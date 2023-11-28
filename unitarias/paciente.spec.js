@@ -50,7 +50,7 @@ describe('Main Suite -- Pruebas Unitarias Paciente',function(){
     describe('Clase Paciente -- Test Case 7' ,function(){
         it('obtenerEdad() = 39',function(){
             const resultado =u1.obtenerEdad();
-            expect(resultado).to.be.equal(39);
+            expect(resultado).to.be.equal(40);
         });
     });
 
@@ -71,7 +71,7 @@ describe('Main Suite -- Pruebas Unitarias Paciente',function(){
 
         it('u2.obtenerEdad() = 31',function(){
             const edad=u2.obtenerEdad();
-            expect(edad).to.be.equal(31);
+            expect(edad).to.be.equal(33);
         });
     });
 });

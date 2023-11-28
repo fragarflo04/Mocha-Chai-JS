@@ -4,9 +4,9 @@
   "description": "App Salud",
   "main": "index.js",
   "scripts": {
-    "test": "mocha unitarias",
-    "bascula": "mocha unitarias/bascula.spec.js",
-    "paciente": "mocha unitarias/paciente.spec.js"
+    "test": "mocha  --experimental-modules unitarias && mocha --experimental-modules integracion",
+    "bascula": "mocha --experimental-modules unitarias/bascula.spec.js",
+    "paciente": "mocha --experimental-modules unitarias/paciente.spec.js"
   },
   "repository": {
     "type": "git",

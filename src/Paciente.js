@@ -2,11 +2,6 @@
 const { Bascula } = require("../src/Bascula");
 
 class Paciente {
-    nombre = "";
-    apellidos = "";
-    fechaNacimiento = "";
-    registroBascula = "";
-
 
 
     constructor(nom, apellidos, strFecha) {
