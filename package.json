@@ -1,0 +1,25 @@
+{
+  "name": "mocha-chai-js",
+  "version": "1.0.0",
+  "description": "App Salud",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha unitarias",
+    "bascula": "mocha unitarias/bascula.spec.js",
+    "paciente": "mocha unitarias/paciente.spec.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fragarflo04/Mocha-Chai-JS.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fragarflo04/Mocha-Chai-JS/issues"
+  },
+  "homepage": "https://github.com/fragarflo04/Mocha-Chai-JS#readme",
+  "devDependencies": {
+    "chai": "^4.3.10",
+    "mocha": "^10.2.0"
+  }
+}
